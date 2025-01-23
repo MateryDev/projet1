@@ -2,16 +2,16 @@
 var repetition = null;
 var current = 0;
 var myImages = [
-  "../images/robot_cuisine-png.png",
-  "../images/robot2.png",
-  "../images/robot3.png",
-  "../images/robot4.png",
-  "../images/Designer.jpeg",
+  "https://materydev.github.io/projet1/images/robot_cuisine-png.png",
+  "https://materydev.github.io/projet1/images/robot2.png",
+  "https://materydev.github.io/projet1/images/robot3.png",
+  "https://materydev.github.io/projet1/images/robot4.png",
+  "https://materydev.github.io/projet1/images/Designer.jpeg",
 ];
 
 function changeImage() {
   var image = document.getElementById("image");
-  image.src = "../images/" + myImages[current];
+  image.src = "https://materydev.github.io/projet1/images/" + myImages[current];
 
   current = (current + 1) % myImages.length;
   repetition = setTimeout(changeImage, 3000);
