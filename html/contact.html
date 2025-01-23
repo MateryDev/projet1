@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/contact.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Contact</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+        <h1>Contact Form</h1>
+        <div class="input-box">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Name:"
+            required
+          />
+          <i class="bx bxs-user"></i>
+        </div>
+        <div class="input-box">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email:"
+            required
+          />
+          <i class="bx bxs-envelope"></i>
+        </div>
+        <div class="area">
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="5"
+            placeholder="Your message:"
+          ></textarea>
+          <i class="bx bxs-message-rounded-detail"></i>
+        </div>
+        <div>
+          <button type="submit" value="send" class="btn">Submit</button>
+        </div>
+      </form>
+      <a href="../index.html" class="a">Go to Home page</a>
+    </div>
+  </body>
+</html>

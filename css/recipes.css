@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+}
+
+header {
+  display: flex;
+  position: relative;
+  background: url(../images/Designer.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.container {
+  float: left;
+  flex-direction: column;
+  width: 30%;
+  height: auto;
+  padding: 10px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  margin-left: 80px;
+}
+
+.photo {
+  margin-top: 35px;
+}
+
+.container .photo .article {
+  width: 100%;
+  height: 100vh;
+  border-radius: 8px;
+  box-shadow: tomato 0px 5px 15px;
+}
+
+.photo :nth-child(2) {
+  width: 100%;
+  height: 50vh;
+  border-radius: 8px;
+  box-shadow: tomato 0px 5px 15px;
+}
+
+.photo h3 {
+  color: #7a0707;
+  margin-bottom: 15px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: tomato 0px 5px 15px;
+  padding: 5px;
+}
+
+.container1 {
+  float: right;
+  flex-direction: column;
+  width: 30%;
+  height: auto;
+  margin-right: 10px;
+  margin-left: 20%;
+  margin-top: 15%;
+  margin-bottom: 40px;
+}
+
+.description {
+  margin-top: 30%;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: tomato 0px 5px 15px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  color: #fff;
+  font-weight: 600;
+}
+
+.description p {
+  text-align: center;
+  padding: 15px;
+}
+
+.description span {
+  color: #7a0707;
+}
+
+.description1 {
+  margin-top: 110%;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: tomato 0px 5px 15px;
+  text-align: center;
+  backdrop-filter: blur(3px);
+  color: #fff;
+  font-weight: 600;
+}
+
+.description1 p {
+  text-align: center;
+  padding: 10px;
+}
+
+.description2 {
+  margin-top: 80%;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: tomato 0px 5px 15px;
+  text-align: center;
+  backdrop-filter: blur(3px);
+  color: #fff;
+  font-weight: 600;
+}
+
+.description2 p {
+  text-align: center;
+  padding: 15px;
+}
+
+footer {
+  position: absolute;
+  padding: 10px;
+  background: black;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid rgb(154, 2, 154);
+}
+
+footer .media {
+  display: inline-block;
+  font-size: 3rem;
+  gap: 10px;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.bxl-facebook-circle {
+  color: rgb(0, 106, 255);
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.bxl-instagram {
+  color: #fff;
+  background-image: linear-gradient(to right, yellow, red);
+  border-radius: 10px;
+}
+
+.bxl-linkedin-square {
+  background-color: #fff;
+  color: blue;
+  border-radius: 10px;
+}
+
+.adress {
+  color: #fff;
+  float: left;
+}
+
+footer .links {
+  display: inline-flex;
+  align-items: center;
+}
+
+.links ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+}
+
+.links ul li a {
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.links li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: rgb(154, 2, 154);
+  transition: 0.5s;
+}
+
+.links ul li a:hover {
+  color: rgb(154, 2, 154);
+}
+
+.links ul li a:hover::after {
+  width: 100%;
+}
+
+.Go {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.Go a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.Go a:hover {
+  color: rgb(154, 2, 154);
+  text-decoration: underline 3px solid;
+}
+
+@media screen and (max-width: 760px) {
+  header {
+    width: 100%;
+    display: flex;
+  }
+
+  footer {
+    padding: 0;
+    height: auto;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .links ul {
+    display: flex;
+    margin-top: 5px;
+  }
+
+  .Go {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .adress {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .media {
+    margin-top: 5px;
+  }
+
+  .container1 {
+    float: right;
+    flex-direction: column;
+    width: 30%;
+    height: auto;
+    margin-right: 10px;
+    margin-left: 20%;
+    margin-top: 30%;
+  }
+
+  .description1 {
+    margin-top: 12em;
+  }
+
+  .description2 {
+    margin-top: 12em;
+  }
+}
