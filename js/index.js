@@ -14,10 +14,10 @@ function changeImage() {
   image.src = "https://materydev.github.io/projet1/images/" + myImages[current];
 
   current = (current + 1) % myImages.length;
-  repetition = setTimeout(changeImage, 5000);
-  setTimeout("stopImage()", 21000);
+  repetition = setTimeout(changeImage, 3000);
+  setTimeout("stopImage()", 16000);
 }
 
 function stopImage() {
-  clearTimeout(repetition);
+  setTimeout(repetition);
 }
