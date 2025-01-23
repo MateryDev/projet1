@@ -5,8 +5,6 @@ var myImages = [
   "https://materydev.github.io/projet1/images/robot_cuisine-png.png",
   "https://materydev.github.io/projet1/images/robot2.png",
   "https://materydev.github.io/projet1/images/robot3.png",
-  "https://materydev.github.io/projet1/images/robot4.png",
-  "https://materydev.github.io/projet1/images/Designer.jpeg",
 ];
 
 function changeImage() {
